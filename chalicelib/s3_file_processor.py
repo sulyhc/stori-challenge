@@ -26,11 +26,11 @@ def process_csv_file(s3_path_file):
 
         if counter == 100:
             counter = 0
-            TxnsProcess(None).process_txns_list(list_txns)(list_txns)
+            TxnsProcess(None).process_txns_list(list_txns)
             list_txns = []
 
     if len(list_txns) > 0:
-        TxnsProcess(None).process_txns_list(list_txns)(list_txns)
+        TxnsProcess(None).process_txns_list(list_txns)
         list_txns=[]
 
     return True

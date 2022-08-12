@@ -6,10 +6,10 @@ import pymysql
 
 def get_db_conn():
 
-    return pymysql.connect(host=os.environ['HOST'],
-                                                   user=os.environ['USER'],
-                                                   password=os.environ['PASS'],
-                                                   db=os.environ['DB'],
+    return pymysql.connect(host=os.environ['HOST_DB'],
+                                                   user=os.environ['USER_DB'],
+                                                   password=os.environ['PASS_DB'],
+                                                   db=os.environ['SCHEMA_DB'],
                                                    cursorclass=pymysql.cursors.DictCursor)
 
 
