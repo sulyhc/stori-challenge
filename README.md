@@ -1,4 +1,4 @@
-# Creditas Challenge
+# Stori Challenge
 
 This is the project for solve the Stori challenge
 
